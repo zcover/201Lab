@@ -89,14 +89,16 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
-
+var total = 1
 function sumArray(sumArr) { //eslint-disable-line
-
+  console.log('I am inside the function')
   for(var i = 0; i < testArray.length; i++){
-    var answerOne = sum(a, b);
-    console.log(answerOne);
-    var answertwo = sum(answerOne + [i]);
-    return answertwo;
+    console.log('I am inside the for loop')
+    var prodtotal = multiply(testArray[i], total)[0];
+    console.log(prodtotal);
+
+    // var sumtotal = sum(testArray)[i], total)[0];
+    // console.log(sumtotal);
   }
 
 
